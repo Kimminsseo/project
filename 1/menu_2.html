@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>메가커피</title>
+	<link href="favicon.png" rel="shortcut icon" >
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="inner clearfix">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></div>
+			<div class="logo_2"><a href="index.html"><img src="images/logo_2.png" alt="로고"></a></div>
+			<div class="gnb">
+			<ul class="gnb clearfix">
+				<li><a href="">브랜드</a>
+					<ul class="sub_menu iv1">
+						<li><a href="">소개</a></li>
+						<li><a href="">비전</a></li>
+					</ul>
+				</li>
+				<li><a href="menu.html">메뉴</a>
+					<ul class="sub_menu">
+						<li><a href="menu.html">음료</a></li>
+						<li><a href="menu_2.html">간식</a></li>
+					</ul>
+				</li>
+				<li><a href="store.html">가게</a>
+					<ul class="sub_menu">
+						<li><a href="store.html">매장찾기</a></li>
+						<li><a href="">단체주문</a></li>
+						<li><a href="">예약</a></li>
+					</ul>
+				</li>
+				<li><a href="iv.html">이벤트</a>
+					<ul class="sub_menu iv">
+						<li><a href="iv.html">진행중인 이벤트</a></li>
+						<li><a href="iv.html">완료된 이벤트</a></li>
+					</ul>
+				</li>
+				<li><a href="">창업</a>
+					<ul class="sub_menu">
+						<li><a href="">창업설명</a></li>
+						<li><a href="">개설비용</a></li>
+						<li><a href="">인테리어</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="top">
+				<li>로그인</li>
+				ㅣ
+				<li>매장찾기</li>
+				ㅣ
+				<li>
+					<div class="search">
+						<div><a href=""><i class="xi-search"></i></a><input type="search"></div>
+					</div>	
+				</li>			
+			</ul>
+			<div class="modal">
+				<div class="modal_1">
+					<fieldset>
+						<p>로그인</p>
+						<p><span>ID : </span><input type="text" class="text_input"></p>
+						<p><span>PW : </span><input type="password" class="text_input"></p>
+						<p><input type="button" value="LOGIN" class="btn_input"></p>
+					</fieldset>
+					<p class="close"><img src="images/x.png" alt="닫기"></p>	
+				</div>		
+
+			</div>
+
+			<div class="modal2">
+				<div class="modal2_1">
+					<p class="km">
+						<select onChange="handle=window.open(this.value);handle.focus()">
+							<option value="">도/시 선택</option>
+							<option value="">강원</option>
+							<option value="">경기</option>
+							<option value="">경남</option>
+							<option value="">경북</option>
+							<option value="">광주</option>
+							<option value="">대구</option>
+							<option value="">대전</option>
+							<option value="">부산</option>
+							<option value="">서울</option>
+							<option value="">세종</option>
+							<option value="">울산</option>
+							<option value="">인천</option>
+							<option value="">전남</option>
+							<option value="">전북</option>
+							<option value="">제주</option>
+							<option value="">충남</option>
+							<option value="">충북</option>
+						</select>
+					</p>
+	
+					<div class="st_search">
+						<div><a href=""><i class="xi-search"></i></a><input type="search"></div>
+					</div>		
+					<p><a href="" class="st_btn">검색</a></p>
+					<p class="close2"><img src="images/x.png" alt="닫기"></p>
+				</div>	
+			</div>
+		</nav>
+		<div class="bars">
+			<p><i class="xi-bars"></i></p>			
+		</div>
+		<div class="qmenu">			
+			<div>
+				<ul class="qmenu_gnb">				
+					<li><a href="">브랜드</a>
+						<ul class="q_sub_menu">
+							<li><a href="">소개</a></li>
+							<li><a href="">비전</a></li>
+						</ul>
+					</li>
+					<li><a href="menu.html">메뉴</a>
+						<ul class="q_sub_menu">
+							<li><a href="menu.html">음료</a></li>
+							<li><a href="menu_2.html">간식</a></li>
+						</ul>
+					</li>
+					<li><a href="store.html">가게</a>
+						<ul class="q_sub_menu">
+							<li><a href="store.html">매장찾기</a></li>
+							<li><a href="">단체주문</a></li>
+							<li><a href="">예약</a></li>
+						</ul>
+					</li>
+					<li><a href="iv.html">이벤트</a>
+						<ul class="q_sub_menu">
+							<li><a href="iv.html">진행중인 이벤트</a></li>
+							<li><a href="iv.html">완료된 이벤트</a></li>
+						</ul>
+					</li>
+					<li><a href="">창업</a>
+						<ul class="q_sub_menu">
+							<li><a href="">창업설명</a></li>
+							<li><a href="">개설비용</a></li>
+							<li><a href="">인테리어</a></li>
+						</ul>
+					</li>
+				</ul>
+				<p class="hi">▶</p>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="sub_visual inner">
+			<div class="about_text">
+				<p>간식</p>
+				<p></p>
+				<p>메가커피만의 맛있는 간식을 먹어보세요</p>
+				<ul class="sub_btn">
+					<li><a href="menu.html">음료</a></li>
+					<li><a href="">간식</a></li>
+				</ul>
+			</div>
+		</div>
+
+	
+			<div class="inner">
+				<h1>간식</h1>
+				<div class="menu_box">
+					<h2>메뉴</h2>
+					<div class="bar"></div>
+					<div class="search">
+						<div><a href=""><i class="xi-search"></i></a><input type="search"></div>
+					</div>		
+	
+					<ul class="sub_gnb clearfix">
+						<li>디저트</li>
+						<li>빵</li>
+						<li>케이크</li>
+					</ul>
+				</div>
+	
+				<ul class="menu2 clearfix">
+					<li class="bake">
+						<div><a href=""><img src="images/sub/menu/model_desert1.jpg" alt="메뉴"></a></div>
+						<p>플레인베이글</p>
+					</li>
+					<li class="bake">
+						<div><a href=""><img src="images/sub/menu/model_desert2.jpg" alt="메뉴"></a></div>
+						<p>블루베리베이글</p>
+					</li>
+					<li class="cake">
+						<div><a href=""><img src="images/sub/menu/model_desert3.jpg" alt="메뉴"></a></div>
+						<p>치즈케이크</p>
+					</li>
+					<li class="cake">
+						<div><a href=""><img src="images/sub/menu/model_desert4.jpg" alt="메뉴"></a></div>
+						<p>초코케이크</p>
+					</li>
+					<li class="cake">
+						<div><a href=""><img src="images/sub/menu/model_desert5 .jpg" alt="메뉴"></a></div>
+						<p>티라미수케이크</p>
+					</li>
+					<li class="dessert">
+						<div><a href=""><img src="images/sub/menu/model_desert6.jpg" alt="메뉴"></a></div>
+						<p>핫도그</p>
+					</li>
+					<li class="bake">
+						<div><a href=""><img src="images/sub/menu/model_desert7.jpg" alt="메뉴"></a></div>
+						<p>크로크무슈</p>
+					</li>
+					<li class="bake">
+						<div><a href=""><img src="images/sub/menu/model_desert8.jpg" alt="메뉴"></a></div>
+						<p>허니버터브래드</p>
+					</li>
+					<li class="bake">
+						<div><a href=""><img src="images/sub/menu/model_desert9.jpg" alt="메뉴"></a></div>
+						<p>초코크림바바</p>
+					</li>
+					<li class="bake">
+						<div><a href=""><img src="images/sub/menu/model_desert10.jpg" alt="메뉴"></a></div>
+						<p>커스터드 크림바바</p>
+					</li>
+					<li class="bake">
+						<div><a href=""><img src="images/sub/menu/model_desert11.jpg" alt="메뉴"></a></div>
+						<p>생크림 크림바바</p>
+					</li>
+					<li class="dessert">
+						<div><a href=""><img src="images/sub/menu/model_desert12.jpg" alt="메뉴"></a></div>
+						<p>퐁크러쉬 마카롱</p>
+					</li>
+					<li class="dessert">
+						<div><a href=""><img src="images/sub/menu/model_desert13.jpg" alt="메뉴"></a></div>
+						<p>유니콘프라페 마카롱</p>
+					</li>
+					<li class="dessert">
+						<div><a href=""><img src="images/sub/menu/model_desert14.jpg" alt="메뉴"></a></div>
+						<p>쿠키프라페 마카롱</p>
+					</li>	
+					<li class="">
+						<div><a href=""><img src="images/sub/menu/model_desert_15.jpg" alt="메뉴"></a></div>
+						<p>잉글리시머핀</p>
+					</li>	
+				</ul>
+			</div>		
+	</main>
+	
+	<footer>
+		<div class="inner">
+			<p><a href=""><img src="images/logo.png" alt="로고"></a></p>
+			<div>서울특별시 마포구 월드컵북로4길 81 1층 (주)앤하우스	본사대표전화 1588-0656	고객센터 1588-8298	ㅣ	contact@annhouse.co.kr	Fax 02-325-5199<br>
+			법인명 : 주식회사 앤하우스	대표자 : 김대영	사업자등록번호 105-87-51367</div>
+		</div>
+	</footer>
+</body>
+</html>

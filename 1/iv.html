@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>메가커피</title>
+	<link href="favicon.png" rel="shortcut icon" >
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="inner clearfix">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></div>
+			<div class="logo_2"><a href="index.html"><img src="images/logo_2.png" alt="로고"></a></div>
+			<div class="gnb">
+			<ul class="gnb clearfix">
+				<li><a href="">브랜드</a>
+					<ul class="sub_menu iv1">
+						<li><a href="">소개</a></li>
+						<li><a href="">비전</a></li>
+					</ul>
+				</li>
+				<li><a href="menu.html">메뉴</a>
+					<ul class="sub_menu">
+						<li><a href="menu.html">음료</a></li>
+						<li><a href="menu_2.html">간식</a></li>
+					</ul>
+				</li>
+				<li><a href="store.html">가게</a>
+					<ul class="sub_menu">
+						<li><a href="store.html">매장찾기</a></li>
+						<li><a href="">단체주문</a></li>
+						<li><a href="">예약</a></li>
+					</ul>
+				</li>
+				<li><a href="iv.html">이벤트</a>
+					<ul class="sub_menu iv">
+						<li><a href="iv.html">진행중인 이벤트</a></li>
+						<li><a href="iv.html">완료된 이벤트</a></li>
+					</ul>
+				</li>
+				<li><a href="">창업</a>
+					<ul class="sub_menu">
+						<li><a href="">창업설명</a></li>
+						<li><a href="">개설비용</a></li>
+						<li><a href="">인테리어</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="top">
+				<li>로그인</li>
+				ㅣ
+				<li>매장찾기</li>
+				ㅣ
+				<li>
+					<div class="search">
+						<div><a href=""><i class="xi-search"></i></a><input type="search"></div>
+					</div>	
+				</li>			
+			</ul>
+			<div class="modal">
+				<div class="modal_1">
+					<fieldset>
+						<p>로그인</p>
+						<p><span>ID : </span><input type="text" class="text_input"></p>
+						<p><span>PW : </span><input type="password" class="text_input"></p>
+						<p><input type="button" value="LOGIN" class="btn_input"></p>
+					</fieldset>
+					<p class="close"><img src="images/x.png" alt="닫기"></p>	
+				</div>		
+
+			</div>
+
+			<div class="modal2">
+				<div class="modal2_1">
+					<p class="km">
+						<select onChange="handle=window.open(this.value);handle.focus()">
+							<option value="">도/시 선택</option>
+							<option value="">강원</option>
+							<option value="">경기</option>
+							<option value="">경남</option>
+							<option value="">경북</option>
+							<option value="">광주</option>
+							<option value="">대구</option>
+							<option value="">대전</option>
+							<option value="">부산</option>
+							<option value="">서울</option>
+							<option value="">세종</option>
+							<option value="">울산</option>
+							<option value="">인천</option>
+							<option value="">전남</option>
+							<option value="">전북</option>
+							<option value="">제주</option>
+							<option value="">충남</option>
+							<option value="">충북</option>
+						</select>
+					</p>
+	
+					<div class="st_search">
+						<div><a href=""><i class="xi-search"></i></a><input type="search"></div>
+					</div>		
+					<p><a href="" class="st_btn">검색</a></p>
+					<p class="close2"><img src="images/x.png" alt="닫기"></p>
+				</div>	
+			</div>
+		</nav>
+		<div class="bars">
+			<p><i class="xi-bars"></i></p>			
+		</div>
+		<div class="qmenu">			
+			<div>
+				<ul class="qmenu_gnb">				
+					<li><a href="">브랜드</a>
+						<ul class="q_sub_menu">
+							<li><a href="">소개</a></li>
+							<li><a href="">비전</a></li>
+						</ul>
+					</li>
+					<li><a href="menu.html">메뉴</a>
+						<ul class="q_sub_menu">
+							<li><a href="menu.html">음료</a></li>
+							<li><a href="menu_2.html">간식</a></li>
+						</ul>
+					</li>
+					<li><a href="store.html">가게</a>
+						<ul class="q_sub_menu">
+							<li><a href="store.html">매장찾기</a></li>
+							<li><a href="">단체주문</a></li>
+							<li><a href="">예약</a></li>
+						</ul>
+					</li>
+					<li><a href="iv.html">이벤트</a>
+						<ul class="q_sub_menu">
+							<li><a href="iv.html">진행중인 이벤트</a></li>
+							<li><a href="iv.html">완료된 이벤트</a></li>
+						</ul>
+					</li>
+					<li><a href="">창업</a>
+						<ul class="q_sub_menu">
+							<li><a href="">창업설명</a></li>
+							<li><a href="">개설비용</a></li>
+							<li><a href="">인테리어</a></li>
+						</ul>
+					</li>
+				</ul>
+				<p class="hi">▶</p>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="sub_visual inner">
+			<div class="about_text">
+				<p>진행중인 이벤트</p>
+				<p></p>
+				<p>지금바로 이벤트 참여하시고 상품도 받아가세요</p>
+				<ul class="sub_btn">
+					<li><a href="#ing">진행중</a></li>
+					<li><a href="#ed">완료된</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="inner">
+			<h1 id="ing">진행중인 이벤트</h1>	
+			<ul class="ivent">
+				<li><a href=""><img src="images/mb_1.jpg" alt=""></a>
+					<p>콘칩시리즈 출시 이벤트<br>
+						2022.05.09~05.22</p>
+				</li>
+				<li><a href=""><img src="images/mb_2.jpg" alt=""></a>
+					<p>유니콘매직에이드 이벤트<br>
+						2022.05.04~05.14</p>
+				<li><a href=""><img src="images/mb_3.jpg" alt=""></a>
+					<p>사진자랑 이벤트<br>
+						2022.05.01~05.07</p>
+				</li>
+			</ul>
+			
+			<h1 id="ed">완료된 이벤트</h1>	
+			<ul class="ivent2">
+				<li><a href=""><img src="images/sub/ivent/i_4.png" alt="2022"></a>
+					<p>[종료] 2022 메가커피 설레는 설 이벤트<br>
+						2022.01.13~01.25</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_5.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 크리스마스 세트<br> 
+						2021.12.23~12.302</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_6.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 4행시 이벤트<br>
+						2021.11.12~11.18</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_7.png" alt="2022"></a>
+					<p>[종료] 메가미션 윈터 이벤트<br>
+						2021.11.4~11.30</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_8.png" alt="2022"></a>
+					<p>[종료] 메가, 겨울왕이 될 상인가<br>
+						2021.11.4~2022.1.16</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_9.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 시즌메뉴 퀴즈 이벤트<br>
+						2021.10.29~11.04</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_10.png" alt="2022"></a>
+					<p>[종료] 할로윈이벤트<br>
+						2020.10.30~11.05</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_11.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 한글날 이벤트<br>
+						2021.10.01~10.07</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_12.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 사진 공유 이벤트<br>
+						2021.09.17~09.23</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_13.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 1500호점 돌파 이벤트<br>
+						2021.09.16~09.22</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_14.jpg" alt="2022"></a>
+					<p>[종료] 신메뉴 이름 맞추기 이벤트<br>
+						0221.09.03~09.09</p>
+				</li>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_16.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 한컷 이벤트<br>
+						2021.08.06~08.12</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_17.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 메뉴 맞추기 이벤트<br>
+						2021.07.23~07.29</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_18.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 별명 짓기 이벤트<br>
+						2021.07.09~07.15</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_19.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 여름 이행시 이벤트<br>
+						2021.06.25~07.01</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_20.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 메뉴 맞추기 이벤트<br>
+						2021.06.11~06.17</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_21.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 초성퀴즈 이벤트<br>
+						2021.05.28~06.03</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_22.jpg" alt="2022"></a>
+					<p>[종료] 로즈데이 이벤트<br>
+						2021.05.14~05.20</p>
+				</li>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_24.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 문장 완성 이벤트<br>
+						2021.04.16~04.22</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_25.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 만우절 이벤트<br>
+						2021.04.01~04.08</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_26.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 화이트데이 커플 이벤트<br>
+						2021.03.05~03.118</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_27.jpg" alt="2022"></a>
+					<p>[종료] 딸기 신메뉴 인증샷 이벤트<br>
+						2021.02.22~02.26</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_28.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 퍼즐 찾기 이벤트<br>
+						2021.01.28~0204</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_29.jpg" alt="2022"></a>
+					<p>[종료] 메가커피 MBTI 공유 이벤트<br>
+						2021.0115~01.21</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i_30.jpg" alt="2022"></a>
+					<p>[종료] 새해소원을 말해봐 이벤트<br>
+						2021.01.01~01.07</p>
+				</li>
+			</ul>	
+			
+			<div class="more">MORE +</div>
+			<ul class="more1 ivent2">
+				<li><a href=""><img src="images/sub/ivent/i__1.jpg" alt="2021"></a>
+					<p>[종료] 다이어리세트 출시 기념 이벤트<br>
+						2020.12.11~12.24</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__2.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 글자조합 이벤트<br>
+						2020.11.13~11.19</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__3.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 할로윈 이벤트!<br>
+						2020.10.30~11.05</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__4.png" alt="2021"></a>
+					<p>[종료] 메가커피 미로찾기 이벤트<br>
+						2020.10.16~10.22</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__5.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 퍼즐퀴즈 이벤트<br>>
+						2020.10.02~10.09</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__6.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 틀린그림찾기 이벤트<br>
+						2020.08.21~08.27</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__7.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 메뉴맞추기 이벤트<br>
+						2020.07.24~07.30</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__8.jpg" alt="2021"></a>
+					<p>[종료] 1000호점 오픈기념 EVENT<br>
+						2020.07.17~08.15</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__9.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 사다리타기 이벤트<br>
+						2020.07.03~07.09</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__10.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 빈칸 낱말퀴즈 이벤트!<br>
+						2020.06.19~06.25</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__11.jpg" alt="2021"></a>
+					<p>[종료] 여름 초성퀴즈 이벤트<br>
+						2020.06.05~06.11</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__12.jpg" alt="2021"></a>
+					<p>[종료] 메뉴명 맞추기 이벤트<br>
+						2020.02.07~02.13</p>
+				</li>
+				<li><a href=""><img src="images/sub/ivent/i__13.jpg" alt="2021"></a>
+					<p>[종료] 메가커피 새해 소망 이벤트<br>
+						2020.01.10~01.16</p>
+				</li>
+			</ul>
+		</div>
+	</main>
+	
+	<footer>
+		<div class="inner">
+			<p><a href=""><img src="images/logo.png" alt=""></a></p>
+			<div>서울특별시 마포구 월드컵북로4길 81 1층 (주)앤하우스	본사대표전화 1588-0656	고객센터 1588-8298	ㅣ	contact@annhouse.co.kr	Fax 02-325-5199<br>
+			법인명 : 주식회사 앤하우스	대표자 : 김대영	사업자등록번호 105-87-51367</div>
+		</div>
+	</footer>
+</body>
+</html>
